@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 1. Main Game Container (Apply your border to this ID in CSS) -->
+    <div id="bodyContainer">
+        
+        <!-- Fixed Comment and Fixed Stats Container Box -->
+        <!-- Statistics Tracker Dashboard Bar -->
+        <div id="statsContainer">
+            🏆Rounds Beaten: <span id="roundsCount">0</span>
+        </div>
+
+        <h1>Welcome to Secret Number Game</h1>
+        <h3>In this game, here is all it entails</h3>
+        <h4>Choose a number secretly and answer the following few questions sincerely</h4>
+        <h4>Your choice number must be between 1 - 20 (1 & 20 inclusive)</h4>
+        <h4>Then your secret number will be revealed</h4>
+
+        <!-- Turn Tracker progress -->
+        <p id="trackerText" class="hidden"></p>
+
+        <h4>Are you ready? Please tell us your name and <span id="span">click start if you are ready.</span></h4>
+        
+        <div class="input-group">
+            <input id="userInputText" placeholder="type in your first name">
+            <button id="start" type="button">
+                Start
+            </button>
+        </div>
+
+        <p id="outputText" class="hidden"></p>
+        <div id="responseContainer" class="hidden"></div>
+
+        <button id="resetBtn" class="game hidden-btn play-again-btn">Play Again</button>
+        
+    </div> <!-- Explicitly closing bodyContainer here -->
+
+    <!-- 2. Footer goes outside the container box, but remains inside the body -->
+    <footer id = footer>
+        <p>Copyright: A.A - 2006</p>
+    </footer>
+
+    <!-- 3. Scripts go right before the closing body tag -->
+    <script src="script.js"></script>
+</body>
+</html>
